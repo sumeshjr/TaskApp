@@ -223,3 +223,110 @@ User Registration
  Conclusion
 
 The Task Management Application provides a robust solution for users to manage their tasks efficiently. It leverages the Django framework and RESTful API principles to enable seamless interactions between the frontend and backend. The documentation serves as a guide for users and developers to understand and utilize the application's features effectively.
+
+
+ 	
+ React Task App Documentation
+Git Url - https://github.com/sumeshjr/TaskApp/tree/front
+
+
+ Introduction
+
+This documentation provides an overview of a React Task App, its project structure, and detailed explanations of each JSXX file used in the application. The app includes features such as adding, deleting, viewing, searching, and managing tasks.
+
+ Project Structure
+
+```
+/src
+|-- /components
+|   |-- AddTodo.jsx
+|   |-- DeleteTodo.jsx
+|   |-- Login.jsx
+|   |-- MyTask.jsx
+|   |-- Register.jsx
+|   |-- SearchTodo.jsx
+|   |-- TodoNav.jsx
+|   |-- ViewTodo.jsx
+|-- App.jsx
+|-- App.css
+|-- index.jsx
+|-- logo.svg
+```
+
+ Components
+
+ 1. AddTodo
+
+- File: `AddTodo.jsx`
+
+  This component allows users to add new tasks. It includes a form with fields for task title, description, and priority.
+
+ 2. DeleteTodo
+
+- File: `DeleteTodo.jsx`
+
+  The `DeleteTodo` component displays the user's task list and provides the functionality to delete tasks. It includes error handling and loading indicators.
+
+ 3. Login
+
+- File: `Login.jsx`
+
+  The `Login` component handles user authentication. It includes a form for users to enter their login credentials and navigate to the app.
+
+ 4. MyTask
+
+- File: `MyTask.jsx`
+
+  This component shows the user's tasks and allows for updating task details. It uses modals for updating tasks and includes loading indicators.
+
+ 5. Register
+
+- File: `Register.jsx`
+
+  The `Register` component handles user registration. It includes a form for users to register with their email and password.
+
+ 6. SearchTodo
+
+- File: `SearchTodo.jsx`
+
+  The `SearchTodo` component enables users to search for tasks based on keywords. It displays search results and includes loading indicators.
+
+ 7. TodoNav
+
+- File: `TodoNav.jsx`
+
+  `TodoNav` is a navigation component that provides links to different sections of the app. It is included in various components for consistent navigation.
+
+ 8. ViewTodo
+
+- File: `ViewTodo.jsx`
+
+  The `ViewTodo` component fetches and displays all tasks. It includes loading indicators and error handling.
+
+ App Component
+
+- File: `App.jsx`
+
+  The `App` component serves as the entry point for the application. It sets up the routing using `react-router-dom` and defines routes for different components.
+
+ Routing
+
+- File: `App.jsx`
+
+  Routing is implemented using the `react-router-dom` library. Different routes are defined for components such as `Login`, `Register`, `ViewTodo`, `SearchTodo`, `DeleteTodo`, `AddTodo`, and `MyTask`.
+
+```jsx
+<Routes>
+  <Route path='login' element={<Login />} />
+  <Route path='register' element={<Register />} />
+  <Route path='view' element={<ViewTodo />} />
+  <Route path='search' element={<SearchTodo />} />
+  <Route path='remove' element={<DeleteTodo />} />
+  <Route path='add' element={<AddTodo />} />
+  <Route path='mytask' element={<MyTask />} />
+</Routes>
+```
+
+ Conclusion
+
+This React Task App provides a comprehensive solution for managing tasks, including adding, viewing, searching, and deleting tasks. The modular structure of components enhances maintainability, and the use of routing ensures a smooth user experience.
