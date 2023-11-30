@@ -1,4 +1,70 @@
 
+Steps
+Django Backend:
+Git Url - https://github.com/sumeshjr/TaskApp/tree/master
+
+1. Navigate to your Django project directory:
+
+   cd /path/to/your/django/project
+   
+
+2. Install Django dependencies:
+
+   pip install -r requirements.txt
+   
+
+3. Apply database migrations:
+
+   python manage.py migrate
+   
+
+4. Run the Django development server:
+
+   python manage.py runserver
+   
+   This will start the Django development server at `http://127.0.0.1:8000/` by default.
+
+
+
+
+
+
+ React Frontend:
+Git Url - https://github.com/sumeshjr/TaskApp/tree/front
+
+Assuming your React code is in a separate directory, follow these steps:
+
+1. Navigate to your React project directory:
+
+   cd /path/to/your/react/app
+   
+
+2. Install Node.js dependencies:
+
+   npm install
+   
+
+3. Start the React development server:
+
+   npm start
+   
+   This will start the React development server at `http://localhost:3000/` by default.
+
+ Integrate Django with React:
+
+Now, you need to make sure your Django backend serves the React frontend.
+
+4. Run the Django development server again:
+   This time, it will serve both Django and React.
+
+
+   python manage.py runserver
+   
+
+   Visit `http://127.0.0.1:8000/` in your browser to see your Django backend serving the React frontend.
+
+Congratulations! You've successfully set up a Django backend with a React frontend. Remember to customize paths and configurations based on your project structure.
+
 Task Management Application Documentation Backend
 
 Git Url - https://github.com/sumeshjr/TaskApp/tree/master
